@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#3ed2a7" />
+
+    <link rel="shortcut icon" href="./favicon.png" />
+
+    <title>Ave HTML Template</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/qxb8htk.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendors/liquid-icon/liquid-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" href="assets/css/themes/original.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      section {
+        padding: 50px;
+      }
+      #home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .text-content {
+        flex: 1;
+        padding-right: 20px;
+      }
+
+      #home img {
+        flex-shrink: 0;
+        max-width: 40%;
+        height: auto;
+      }
+
+      h1,
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      img {
+        max-width: 80%;
+      }
+
+      #about {
+        background-color: #f4f4f4;
+      }
+
+      #services ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #services li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        color: black;
+      }
+
+      .service-icon {
+        margin-right: 25px; /* space between the icon and the text */
+      }
+
+      #services li span {
+        flex: 1; /* this ensures the text takes the remaining available space */
+      }
+    </style>
+    <script async src="assets/vendors/modernizr.min.js"></script>
+  </head>
+  <body
+    data-mobile-nav-trigger-alignment="right"
+    data-mobile-nav-align="left"
+    data-mobile-nav-style="modern"
+    data-mobile-nav-shceme="gray"
+    data-mobile-header-scheme="gray"
+    data-mobile-nav-breakpoint="1199"
+  >
+    <div id="wrap">
+      <div
+        class="titlebar titlebar-sm scheme-light text-center"
+        style="background-image: url(./images/homebanner.jpg)"
+      >
+        <header class="main-header main-header-overlay">
+          <div class="mainbar-wrap">
+            <div class="megamenu-hover-bg"></div>
+            <!-- /.megamenu-hover-bg -->
+            <div class="container-fluid mainbar-container">
+              <div class="mainbar">
+                <div class="row mainbar-row align-items-lg-stretch px-4">
+                  <div class="col pr-5">
+                    <div class="navbar-header">
+                      <a
+                        class="navbar-brand"
+                        href="index-creative.html"
+                        rel="home"
+                      >
+                        <span class="navbar-brand-inner">
+                          <img
+                            class="mobile-logo-default"
+                            src="./assets/img/logo/logo-1.svg"
+                            alt="Ave HTML Template"
+                          />
+                          <img
+                            class="logo-default"
+                            src="./assets/img/logo/logo-light.svg"
+                            alt="Ave HTML Template"
+                          />
+                        </span>
+                      </a>
+                      <button
+                        type="button"
+                        class="navbar-toggle collapsed nav-trigger style-mobile"
+                        data-toggle="collapse"
+                        data-target="#main-header-collapse"
+                        aria-expanded="false"
+                        data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'
+                      >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="bars">
+                          <span class="bar"></span>
+                          <span class="bar"></span>
+                          <span class="bar"></span>
+                        </span>
+                      </button>
+                    </div>
+                    <!-- /.navbar-header -->
+                  </div>
+                  <!-- /.col -->
+
+                  <div class="col">
+                    <div
+                      class="collapse navbar-collapse"
+                      id="main-header-collapse"
+                    >
+                      <ul
+                        id="primary-nav"
+                        class="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center"
+                        data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'
+                        data-localscroll="true"
+                      >
+                        <li class="is-active">
+                          <a href="#content">
+                            <span class="link-icon"></span>
+                            <span class="link-txt">
+                              <span class="link-ext"></span>
+                              <span class="txt" style="color: black">Home</span>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#about">
+                            <span class="link-icon"></span>
+                            <span class="link-txt">
+                              <span class="link-ext"></span>
+                              <span class="txt" style="color: black"
+                                >About</span
+                              >
+                            </span>
+                          </a>
+                        </li>
+                        <li class="dropdown-container">
+                          <a href="#services">
+                            <span class=""></span>
+                            <span class="">
+                              <span class=""></span>
+                              <span class="" style="color: black"
+                                >Services</span
+                              >
+                            </span>
+                          </a>
+                          <!-- <div class="dropdown-content">
+                              <a href="./solutions.html">Solution Providers</a>
+                              <a href="./webdev.html">Web development and email hosting </a>
+                              <a href="./managed.html">Managed Services 
+                              <a href="./ios.html">ios/Andriod development</a>
+                              <a href="./seo.html">SEO Services</a>
+                              <a href="./contentwriting.html">
+                                Content Writing
+                              </a>
+                            </div> -->
+                        </li>
+
+                        <!-- <li>
+                          <a href="#testimonial">
+                            <span class="link-icon"></span>
+                            <span class="link-txt">
+                              <span class="link-ext"></span>
+                              <span class="txt">Testimonials</span>
+                            </span>
+                          </a>
+                        </li> -->
+                        <li>
+                          <a href="#comments">
+                            <span class="link-icon"></span>
+                            <span class="link-txt">
+                              <span class="link-ext"></span>
+                              <span class="txt" style="color: black"
+                                >Contact</span
+                              >
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- /#primary-nav  -->
+                    </div>
+                    <!-- /#main-header-collapse -->
+                  </div>
+                  <!-- /.col -->
+
+                  <div class="col text-right">
+                    <div class="header-module">
+                      <ul
+                        class="social-icon social-icon-sm scheme-white font-size-16"
+                      >
+                        <li>
+                          <a href="#" target="_blank"
+                            ><i style="color: black" class="fa fa-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank"
+                            ><i style="color: black" class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank"
+                            ><i style="color: black" class="fa fa-behance"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank"
+                            ><i style="color: black" class="fa fa-dribbble"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.header-module -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.mainbar-row -->
+              </div>
+              <!-- /.mainbar -->
+            </div>
+            <!-- /.mainbar-container -->
+          </div>
+          <!-- /.mainbar-wrap -->
+        </header>
+        <!-- /.main-header -->
+
+        <div class="titlebar-inner">
+          <div class="container titlebar-container">
+            <div class="row titlebar-container">
+              <div class="titlebar-col col-md-12">
+                <h1
+                  data-fittext="true"
+                  data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'
+                  style="color: black"
+                >
+                  Caption
+                </h1>
+              </div>
+              <!-- /.titlebar-col -->
+            </div>
+            <!-- /.titlebar-row -->
+          </div>
+          <!-- /.titlebar-container -->
+        </div>
+        <!-- /.titlebar-inner -->
+      </div>
+      <!-- /.titlebar -->
+
+      <main id="content" class="content">
+        <section id="home">
+          <div class="text-content">
+            <h2>Who We Are?</h2>
+            <p style="width: 80%">
+              We are professional Transaction Coordinators with a purpose to
+              streamline the real estate transaction process. We are dedicated
+              to giving real estate companies the best possible support. We've
+              facilitated innumerable transactions over the years, and our
+              unwavering commitment to excellence keeps us moving forward
+            </p>
+            <p style="width: 80%">
+              Our mission is to provide real estate agents with the tools they
+              need to be successful as well as compliance for our clients,
+              minimize administrative workloads, and streamline the transaction
+              process. We believe that successful real estate enterprises and
+              happy customers are the results of smooth transactions.
+            </p>
+            <p style="width: 80%">
+              The cornerstones of our business operations are honesty,
+              dependability, and diligence. We are committed to upholding the
+              highest standards of service excellence because we value your
+              trust
+            </p>
+          </div>
+          <img
+            src="./images/aboutfinal.jpeg"
+            style="height: 50vh; width: 450px; margin-top: 20px"
+            alt="Image representing transaction coordination"
+          />
+        </section>
+
+        <!-- About Section -->
+        <h2 style="text-align: center">Caption</h2>
+        <!-- Services Section -->
+        <section id="services">
+          <h2 style="margin-bottom: 20px">Our Services</h2>
+          <p style="margin-top: 36px">
+            Our transaction coordinators will ensure that your deadlines are
+            met, paperwork is complete, and they will coordinate all
+            communication with buyers, lenders, and escrow. Our job is to
+            relieve you of this burden so you can focus on growing your business
+            and networking, without having to spend endless hours each year on
+            paperwork
+          </p>
+          <ul>
+            <li style="margin-top: 40px">
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+              />
+              <span>
+                Introduce our role in the transaction to every party involved.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span> Ensuring thorough property assessments. </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Confirm date/time of home inspection and confirm utilities will
+                be turned on.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span> Streamlining the appraisal process for efficiency. </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              /><span
+                >Ensuring regulatory compliance and correct appraisals.</span
+              >
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Prepare additional addenda as needed (price reductions, repairs,
+                extensions, etc.)
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Review every document to verify correct dates, initials, and
+                signatures.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              /><span
+                >Supply an executed Purchase Agreement to every party.</span
+              >
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Open escrow, obtain a file number, request preliminaries, and
+                instructions.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Verify contact information, dates, and documents are uploaded to
+                our online service where it will remain securely accessible to
+                all parties 24/7.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Prepare a Full Disclosure Package delivered via mail, email or
+                DocuSign to buyer and/or the seller.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Send copies of all reports to the buyer's agent and escrow
+                company.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Upload all reports, disclosures and documents into our online
+                service as it is received or executed.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span> Send all necessary documents to escrow </span>
+              .
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Track escrow time frames for receipt, delivery and return of all
+                documents and deposits.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Maintain constant contact with every party for status updates or
+                to alert you of anything outstanding or requiring attention.
+              </span>
+            </li>
+            <li>
+              <img
+                src="./images/bullet.png"
+                style="height: 15px; margin-right: 10px"
+                alt=""
+              />
+              <span>
+                Complete and deliver a full digital paper trail (PDF) to you.
+              </span>
+            </li>
+          </ul>
+        </section>
+        <section class="vc_row pt-120 pb-120">
+          <div class="container">
+            <div class="row">
+              <div class="lqd-column col-md-12">
+                <div class="lqd-column-inner bg-white box-shadow-1">
+                  <div class="row d-flex flex-wrap align-items-stretch">
+                    <!-- /.lqd-column col-md-4 -->
+
+                    <div class="lqd-column col-md-8 px-md-5 pt-30 pb-30">
+                      <h3
+                        class="font-size-24 lh-165 text-uppercase mr-md-9 pr-md-9"
+                      >
+                        We are available 24/7 to support you
+                      </h3>
+
+                      <div
+                        class="contact-form contact-form-inputs-underlined contact-form-button-block"
+                      >
+                        <form
+                          action="assets/php/mailer.php"
+                          method="post"
+                          novalidate="novalidate"
+                        >
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input
+                                type="text"
+                                name="name"
+                                aria-required="true"
+                                aria-invalid="false"
+                                placeholder="First Name"
+                                required
+                              />
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                              <input
+                                type="text"
+                                name="l-name"
+                                aria-required="true"
+                                aria-invalid="false"
+                                placeholder="Last Name"
+                                required
+                              />
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                              <input
+                                type="email"
+                                name="email"
+                                aria-required="true"
+                                aria-invalid="false"
+                                placeholder="Your email address"
+                                required
+                              />
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                              <input
+                                type="tel"
+                                name="mobile"
+                                aria-required="true"
+                                aria-invalid="false"
+                                placeholder="Mobile no"
+                                required
+                              />
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-12 mt-25">
+                              <input
+                                class="font-size-16 font-weight-bold ltr-sp-1 text-uppercase bg-gradient-primary-lr border-none"
+                                type="submit"
+                                value="Get started"
+                              />
+                            </div>
+                            <!-- /.col-md-12 -->
+                          </div>
+                          <!-- /.row -->
+                        </form>
+                        <div class="contact-form-result hidden"></div>
+                        <!-- /.contact-form-result -->
+                      </div>
+                      <!-- /.contact-form -->
+
+                      <p>
+                        We respect your privacy and do not tolerate spam and
+                        will never sell, rent, lease or give away your
+                        information to any third party.
+                      </p>
+                    </div>
+                    <!-- /.lqd-column col-md-8 -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.lqd-column-inner bg-white box-shadow-1 -->
+              </div>
+              <!-- /.lqd-column col-md-12 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </section>
+      </main>
+      <!-- /#content.content -->
+
+      <footer class="main-footer bg-vulcan pt-100 pb-90">
+        <div class="container">
+          <div class="row">
+            <div class="lqd-column col-md-4 col-sm-6">
+              <figure class="mb-30">
+                <img src="./assets/img/logo/logo-light.svg" alt="Ave" />
+              </figure>
+              <ul class="social-icon social-icon-md mb-20">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+              </ul>
+              <p>
+                Copyright 2019
+                <span class="text-white font-weight-bold">Ave</span>. All Rights
+                Reserved.
+              </p>
+            </div>
+            <!-- /.col-md-3 col-sm-6 -->
+
+            <div class="lqd-column col-md-2 col-sm-6">
+              <h3 class="mt-0 widget-title text-white">Main Navigation</h3>
+              <ul class="lqd-custom-menu reset-ul text-white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <!-- /.col-md-2 col-sm-6 -->
+
+            <div class="lqd-column col-md-2 col-sm-6">
+              <h3 class="mt-0 widget-title text-white">Abous Us</h3>
+              <ul class="lqd-custom-menu reset-ul text-white">
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <!-- /.col-md-2 col-sm-6 -->
+
+            <div class="lqd-column col-md-2 col-sm-6">
+              <h3 class="mt-0 widget-title text-white">Workflows</h3>
+              <ul class="lqd-custom-menu reset-ul text-white">
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Reporting</a></li>
+                <li><a href="#">Tracking</a></li>
+                <li><a href="#">All Uses</a></li>
+              </ul>
+            </div>
+            <!-- /.col-md-2 col-sm-6 -->
+
+            <div class="lqd-column col-md-2 col-sm-6">
+              <h3 class="mt-0 widget-title text-white">Resources</h3>
+              <ul class="lqd-custom-menu reset-ul text-white">
+                <li><a href="#">Ave Guide</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Intergrations</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+            </div>
+            <!-- /.col-md-2 col-sm-6 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </footer>
+      <!-- /.main-footer -->
+    </div>
+    <!-- /#wrap -->
+
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/js/theme-vendors.js"></script>
+    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+  </body>
+</html>
