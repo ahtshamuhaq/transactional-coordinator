@@ -42,7 +42,37 @@
         justify-content: space-between;
         align-items: center;
       }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
+      .footer-logo img {
+        width: 100px; /* Adjust the width of your logo */
+      }
+
+      .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+      }
+
+      .footer-nav li {
+        margin-right: 20px;
+      }
+
+      .footer-nav a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .footer-nav a:hover {
+        text-decoration: underline;
+      }
       .text-content {
         flex: 1;
         padding-right: 20px;
@@ -84,7 +114,30 @@
         margin-bottom: 20px;
         color: black;
       }
+      .titlebar-inner {
+        padding: 20px 0;
+      }
 
+      .slider-container {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50vh;
+      }
+
+      .slider-slide {
+        flex: 0 0 100%;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 10px;
+        display: none;
+      }
+
+      .slider-slide:first-child {
+        display: block;
+      }
       .service-icon {
         margin-right: 25px; /* space between the icon and the text */
       }
@@ -93,6 +146,7 @@
         flex: 1; /* this ensures the text takes the remaining available space */
       }
     </style>
+
     <script async src="assets/vendors/modernizr.min.js"></script>
   </head>
   <body
@@ -106,7 +160,7 @@
     <div id="wrap">
       <div
         class="titlebar titlebar-sm scheme-light text-center"
-        style="background-image: url(./images/homebanner.jpg)"
+        style="background-image: url(./images/homf.jpg)"
       >
         <header class="main-header main-header-overlay">
           <div class="mainbar-wrap">
@@ -171,7 +225,11 @@
                             <span class="link-icon"></span>
                             <span class="link-txt">
                               <span class="link-ext"></span>
-                              <span class="txt" style="color: black">Home</span>
+                              <span
+                                class="txt"
+                                style="color: black; font-size: 18px"
+                                >Home</span
+                              >
                             </span>
                           </a>
                         </li>
@@ -180,7 +238,9 @@
                             <span class="link-icon"></span>
                             <span class="link-txt">
                               <span class="link-ext"></span>
-                              <span class="txt" style="color: black"
+                              <span
+                                class="txt"
+                                style="color: black; font-size: 18px"
                                 >About</span
                               >
                             </span>
@@ -191,7 +251,9 @@
                             <span class=""></span>
                             <span class="">
                               <span class=""></span>
-                              <span class="" style="color: black"
+                              <span
+                                class=""
+                                style="color: black; font-size: 18px"
                                 >Services</span
                               >
                             </span>
@@ -222,7 +284,9 @@
                             <span class="link-icon"></span>
                             <span class="link-txt">
                               <span class="link-ext"></span>
-                              <span class="txt" style="color: black"
+                              <span
+                                class="txt"
+                                style="color: black; font-size: 18px"
                                 >Contact</span
                               >
                             </span>
@@ -275,24 +339,31 @@
           <!-- /.mainbar-wrap -->
         </header>
         <!-- /.main-header -->
-
-        <div class="titlebar-inner">
-          <div class="container titlebar-container">
-            <div class="row titlebar-container">
-              <div class="titlebar-col col-md-12">
-                <h1
-                  data-fittext="true"
-                  data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'
-                  style="color: black"
-                >
-                  Caption
-                </h1>
-              </div>
-              <!-- /.titlebar-col -->
-            </div>
-            <!-- /.titlebar-row -->
-          </div>
-          <!-- /.titlebar-container -->
+        <div class="slider-container">
+          <h1
+            style="color: black; font-size: 30px !important"
+            class="slider-slide"
+          >
+            Unlocking Real Estate Success Through Streamlined Transactions
+          </h1>
+          <h1
+            style="color: black; font-size: 30px !important"
+            class="slider-slide"
+          >
+            Excellence in Real Estate Support: It's What We Do.
+          </h1>
+          <h1
+            style="color: black; font-size: 30px !important"
+            class="slider-slide"
+          >
+            Your Success, Our Purpose: Streamlining Real Estate Transactions.
+          </h1>
+          <h1
+            style="color: black; font-size: 30px !important"
+            class="slider-slide"
+          >
+            Excellence, Compliance, Efficiency: Our Triple Promise.
+          </h1>
         </div>
         <!-- /.titlebar-inner -->
       </div>
@@ -331,7 +402,9 @@
         </section>
 
         <!-- About Section -->
-        <h2 style="text-align: center">Caption</h2>
+        <h2 style="text-align: center">
+          We Take Care of the Details, You Enjoy the Results
+        </h2>
         <!-- Services Section -->
         <section id="services">
           <h2 style="margin-bottom: 20px">Our Services</h2>
@@ -624,82 +697,18 @@
       </main>
       <!-- /#content.content -->
 
-      <footer class="main-footer bg-vulcan pt-100 pb-90">
-        <div class="container">
-          <div class="row">
-            <div class="lqd-column col-md-4 col-sm-6">
-              <figure class="mb-30">
-                <img src="./assets/img/logo/logo-light.svg" alt="Ave" />
-              </figure>
-              <ul class="social-icon social-icon-md mb-20">
-                <li>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-behance"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                </li>
-              </ul>
-              <p>
-                Copyright 2019
-                <span class="text-white font-weight-bold">Ave</span>. All Rights
-                Reserved.
-              </p>
-            </div>
-            <!-- /.col-md-3 col-sm-6 -->
-
-            <div class="lqd-column col-md-2 col-sm-6">
-              <h3 class="mt-0 widget-title text-white">Main Navigation</h3>
-              <ul class="lqd-custom-menu reset-ul text-white">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-            </div>
-            <!-- /.col-md-2 col-sm-6 -->
-
-            <div class="lqd-column col-md-2 col-sm-6">
-              <h3 class="mt-0 widget-title text-white">Abous Us</h3>
-              <ul class="lqd-custom-menu reset-ul text-white">
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-            <!-- /.col-md-2 col-sm-6 -->
-
-            <div class="lqd-column col-md-2 col-sm-6">
-              <h3 class="mt-0 widget-title text-white">Workflows</h3>
-              <ul class="lqd-custom-menu reset-ul text-white">
-                <li><a href="#">Management</a></li>
-                <li><a href="#">Reporting</a></li>
-                <li><a href="#">Tracking</a></li>
-                <li><a href="#">All Uses</a></li>
-              </ul>
-            </div>
-            <!-- /.col-md-2 col-sm-6 -->
-
-            <div class="lqd-column col-md-2 col-sm-6">
-              <h3 class="mt-0 widget-title text-white">Resources</h3>
-              <ul class="lqd-custom-menu reset-ul text-white">
-                <li><a href="#">Ave Guide</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Intergrations</a></li>
-                <li><a href="#">Community</a></li>
-              </ul>
-            </div>
-            <!-- /.col-md-2 col-sm-6 -->
-          </div>
-          <!-- /.row -->
+      <footer>
+        <div class="footer-logo">
+          <img src="logo.png" alt="Company Logo" />
         </div>
-        <!-- /.container -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </footer>
       <!-- /.main-footer -->
     </div>
@@ -709,5 +718,22 @@
     <script src="./assets/js/theme-vendors.js"></script>
     <script src="./assets/js/theme.min.js"></script>
     <script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+    <script>
+      const slides = document.querySelectorAll(".slider-slide");
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.display = i === index ? "block" : "none";
+        });
+      }
+
+      showSlide(currentSlide);
+
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }, 3000); // Change slide every 3 seconds (adjust as needed)
+    </script>
   </body>
 </html>
