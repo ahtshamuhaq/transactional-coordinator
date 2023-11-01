@@ -33,9 +33,7 @@
         padding: 0;
         line-height: 1.6;
       }
-      /* .txt {
-        color: black !important;
-      } */
+
       section {
         padding: 50px;
       }
@@ -109,6 +107,10 @@
         list-style-type: none;
         padding: 0;
       }
+      /* #services{
+        background-color: #f2fbf8;
+        margin-top: 50px;
+      } */
 
       #services li {
         display: flex;
@@ -147,6 +149,37 @@
       #services li span {
         flex: 1; /* this ensures the text takes the remaining available space */
       }
+      .teext {
+        color: #000000 !important;
+      }
+      .txt {
+        color: black !important;
+      }
+      .child1 {
+            display: flex;
+            justify-content: space-between;
+        }
+      .child2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+
+       
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            background-color: #5D90A4;
+            border-radius: 50%;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+       
     </style>
 
     <script async src="assets/vendors/modernizr.min.js"></script>
@@ -162,7 +195,7 @@
     <div id="wrap">
       <div
         class="titlebar titlebar-sm scheme-light text-center"
-        style="background-image: url(./images/banner1.jpg)"
+        style="background-image: url(./images/banner4.jpg)"
       >
         <header class="main-header main-header-overlay">
           <div class="mainbar-wrap">
@@ -227,7 +260,9 @@
                             <span class="link-icon"></span>
                             <span class="link-txt">
                               <span class="link-ext"></span>
-                              <span class="txt" style="font-size: 18px"
+                              <span
+                                class="txt"
+                                style="font-size: 18px; font-weight: 800"
                                 >Home</span
                               >
                             </span>
@@ -238,7 +273,9 @@
                             <span class="link-icon"></span>
                             <span class="link-txt">
                               <span class="link-ext"></span>
-                              <span class="txt" style="font-size: 18px"
+                              <span
+                                class="txt"
+                                style="font-size: 18px; font-weight: 800"
                                 >About</span
                               >
                             </span>
@@ -249,7 +286,9 @@
                             <span class="link-icon"></span>
                             <span class="link-txt">
                               <span class="link-ext"></span>
-                              <span class="txt" style="font-size: 18px"
+                              <span
+                                class="txt"
+                                style="font-size: 18px; font-weight: 800"
                                 >Services</span
                               >
                             </span>
@@ -280,7 +319,9 @@
                             <span class="link-icon"></span>
                             <span class="link-txt">
                               <span class="link-ext"></span>
-                              <span class="txt" style="font-size: 18px"
+                              <span
+                                class="txt"
+                                style="font-size: 18px; font-weight: 800"
                                 >Contact</span
                               >
                             </span>
@@ -335,28 +376,48 @@
         <!-- /.main-header -->
         <div class="slider-container">
           <h1
-            style="font-size: 30px !important; color: white"
-            class="slider-slide txt"
+            style="
+              font-size: 40px !important;
+              color: white;
+              margin-bottom: 85px !important;
+            "
+            class="slider-slide teext"
           >
-            Unlocking Real Estate Success Through Streamlined Transactions
+            Unlocking Real Estate Success <br />
+            Through Streamlined Transactions
           </h1>
           <h1
-            style="font-size: 30px !important; color: white"
-            class="slider-slide txt"
+            style="
+              font-size: 40px !important;
+              color: white;
+              margin-bottom: 85px !important;
+            "
+            class="slider-slide teext"
           >
-            Excellence in Real Estate Support: It's What We Do.
+            Excellence in Real Estate Support: <br />
+            It's What We Do.
           </h1>
           <h1
-            style="font-size: 30px !important; color: white"
-            class="slider-slide txt"
+            style="
+              font-size: 40px !important;
+              color: white;
+              margin-bottom: 85px !important;
+            "
+            class="slider-slide teext"
           >
-            Your Success, Our Purpose: Streamlining Real Estate Transactions.
+            Your Success, Our Purpose: <br />
+            Streamlining Real Estate Transactions.
           </h1>
           <h1
-            style="font-size: 30px !important; color: white"
-            class="slider-slide txt"
+            style="
+              font-size: 40px !important;
+              color: white;
+              margin-bottom: 85px !important;
+            "
+            class="slider-slide teext"
           >
-            Excellence, Compliance, Efficiency: Our Triple Promise.
+            Excellence, Compliance, Efficiency: <br />
+            Our Triple Promise.
           </h1>
         </div>
         <!-- /.titlebar-inner -->
@@ -394,11 +455,23 @@
             alt="Image representing transaction coordination"
           />
         </section>
-
+      
         <!-- About Section -->
-        <h2 style="text-align: center">
-          We Take Care of the Details, You Enjoy the Results
-        </h2>
+        <section
+          class="vc_row pt-70 pb-70 bg-cover"
+          style="background-image: url(./images/banner4.jpg)"
+        
+        >
+            <span class="" style="color: #000 !important;font-size: 38px; font-weight:700;margin-left: 450px;">
+              We Take Care of the Details,</span>
+              <br>
+              <span style="color: #000;font-size: 38px; font-weight:700; margin-left: 650px !important"
+                >You Enjoy the Results</span
+              >
+            </span>
+          <!-- /.container -->
+        </section>
+
         <!-- Services Section -->
         <section id="services">
           <h2 style="margin-bottom: 20px">Our Services</h2>
@@ -586,19 +659,64 @@
             </li>
           </ul>
         </section>
-        <section class="vc_row pt-120 pb-120">
+        <section class="vc_row pt-30 pb-30 "  >
+          <div class="parent">
+
+<div class="child1">
+  <div  style="width: 30%;">
+    <div class="circle"></div>
+    <h1 style="font-size: larger;">Effective Transaction Support</h1>
+    <p>Our main goal is to enable a smooth transaction process, improving the client experience from the beginning of the contract negotiations to the last closing.</p>
+  </div>
+  <div style="width: 30%;">
+    <div class="circle"></div>
+    <h1 style="font-size: larger;">Flawless Coordination
+    </h1>
+    <p>To guarantee perfect coordination among all involved parties, our team is equipped with the knowledge of a real estate licensed transaction coordinator who is well-versed in the nuances of the local market.</p>
+  </div>
+  <div style="width: 30%;">
+    <div class="circle"></div>
+    <h1 style="font-size: larger;">Extensive Recordkeeping and Time Management </h1>
+    <p>We handle all of the important paperwork and deadlines related to the transaction, making sure that everything is finished on time for the closing.</p>
+  </div>
+  </div>
+<div class="child2">
+  <div style="width: 30%;">
+    <div class="circle"></div>
+    <h1 style="font-size: larger;">Superb Customer Service 
+    </h1>
+    <p>We always show professionalism and knowledge in all of our client interactions. Our goal is to help you project a more polished image and effectively represent your interests in line with your company's expansion goals.</p>
+  </div>
+  <div style="width: 30%;">
+    <div class="circle"></div>
+    <h1 style="font-size: larger;">Tailored Services </h1>
+    <p>Since no two deals are the same and every agent has different requirements, we are willing to modify our services to meet your specific needs.</p>
+  </div>
+  <div style="width: 30%;">
+    <div class="circle"></div>
+    <h1 style="font-size: larger;">Regulatory Compliance</h1>
+    <p>We also promise to see to it that all contracts follow local and state laws. We keep up with changes in regulations.</p>
+  </div>
+  </div>
+  
+          </div>
+       </section>
+
+        <section class="vc_row pt-120 pb-120 "  >
           <div class="container">
             <div class="row">
               <div class="lqd-column col-md-12">
                 <div class="lqd-column-inner bg-white box-shadow-1">
                   <div class="row d-flex flex-wrap align-items-stretch">
+                   
                     <!-- /.lqd-column col-md-4 -->
 
                     <div class="lqd-column col-md-8 px-md-5 pt-30 pb-30">
                       <h3
                         class="font-size-24 lh-165 text-uppercase mr-md-9 pr-md-9"
                       >
-                        We are available 24/7 to support you
+                      We are available 24/7 to support you
+
                       </h3>
 
                       <div
@@ -615,6 +733,7 @@
                                 type="text"
                                 name="name"
                                 aria-required="true"
+                                style="color: #000;"
                                 aria-invalid="false"
                                 placeholder="First Name"
                                 required
@@ -625,6 +744,7 @@
                               <input
                                 type="text"
                                 name="l-name"
+                                style="color: #000;"
                                 aria-required="true"
                                 aria-invalid="false"
                                 placeholder="Last Name"
@@ -635,6 +755,7 @@
                             <div class="col-md-6">
                               <input
                                 type="email"
+                                style="color: #000;"
                                 name="email"
                                 aria-required="true"
                                 aria-invalid="false"
@@ -647,6 +768,7 @@
                               <input
                                 type="tel"
                                 name="mobile"
+                                style="color: #000;"
                                 aria-required="true"
                                 aria-invalid="false"
                                 placeholder="Mobile no"
@@ -656,7 +778,8 @@
                             <!-- /.col-md-6 -->
                             <div class="col-md-12 mt-25">
                               <input
-                                class="font-size-16 font-weight-bold ltr-sp-1 text-uppercase bg-gradient-primary-lr border-none"
+                                class="font-size-16 font-weight-bold ltr-sp-1 text-uppercase  border-none"
+                                style="background-color: #5d90a4;"
                                 type="submit"
                                 value="Get started"
                               />
@@ -676,6 +799,10 @@
                         information to any third party.
                       </p>
                     </div>
+                    <div
+                    class="lqd-column col-md-4 bg-cover bg-center"
+                    style="background-image: url(./images/contact2.jpg)"
+                  ></div>
                     <!-- /.lqd-column col-md-8 -->
                   </div>
                   <!-- /.row -->
@@ -727,7 +854,7 @@
       setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
-      }, 3000); // Change slide every 3 seconds (adjust as needed)
+      }, 5000); // Change slide every 3 seconds (adjust as needed)
     </script>
   </body>
 </html>
